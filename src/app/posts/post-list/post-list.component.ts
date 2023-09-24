@@ -6,6 +6,7 @@ import { Component } from "@angular/core";
   styleUrls: ["./post-list.component.css"],
 })
 export class PostListComponent {
+  /*
   posts = [
     {
       title: "First Post",
@@ -20,4 +21,6 @@ export class PostListComponent {
       content: "This is the third post's content",
     },
   ];
+  */
+  posts = [];
 }
