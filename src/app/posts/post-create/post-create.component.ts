@@ -5,4 +5,8 @@ import { Component } from "@angular/core";
   templateUrl: "./post-create.component.html",
   styleUrls: ["./post-create.component.css"],
 })
-export class PostCreateComponent {}
+export class PostCreateComponent {
+  onAddPost(): void {
+    alert('Post added!')
+  }
+}
