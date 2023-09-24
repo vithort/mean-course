@@ -5,6 +5,7 @@ import { NgModule } from "@angular/core";
 
 import {
   MatButtonModule,
+  MatExpansionModule,
   MatCardModule,
   MatInputModule,
   MatToolbarModule,
@@ -12,18 +13,24 @@ import {
 
 import { AppComponent } from "./app.component";
 
-import { PostCreateComponent } from "./posts/post-create/post-create.component";
-
 import { HeaderComponent } from "./header/header.component";
+import { PostCreateComponent } from "./posts/post-create/post-create.component";
+import { PostListComponent } from "./posts/post-list/post-list.component";
 
 @NgModule({
-  declarations: [AppComponent, PostCreateComponent, HeaderComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    PostCreateComponent,
+    PostListComponent,
+  ],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
     FormsModule,
     // Angular Material
     MatButtonModule,
+    MatExpansionModule,
     MatCardModule,
     MatInputModule,
     MatToolbarModule,
