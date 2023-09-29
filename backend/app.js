@@ -6,14 +6,10 @@ const Post = require("./models/post");
 
 const app = express();
 
-const mongo = {
-  user: "USER",
-  password: "PASSWORD",
-  cluster: "CLUSTER",
-};
+const TOKEN = require("../TOKEN");
 
 mongoose
-  .connect(`mongodb+srv://${mongo.user}:${mongo.password}@${mongo.cluster}`)
+  .connect(`mongodb+srv://${TOKEN.user}:${TOKEN.password}@${TOKEN.cluster}`)
   .then(() => {
     console.log("Connected to database!");
   })
@@ -47,21 +43,11 @@ app.post("/api/posts", (req, res, next) => {
 });
 
 app.get("/api/posts", (req, res, next) => {
-  const posts = [
-    {
-      id: "123",
-      title: "First server-side post",
-      content: "This is coming from the server",
-    },
-    {
-      id: "456",
-      title: "Second server-side post",
-      content: "This is coming from the server!",
-    },
-  ];
-  res.status(200).json({
-    message: "Posts fetched successfully!",
-    posts: [...posts],
+  Post.find().then((documents) => {
+    res.status(200).json({
+      message: "Posts fetched successfully!",
+      posts: [...documents],
+    });
   });
 });
 
