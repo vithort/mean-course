@@ -1,6 +1,7 @@
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 import { NgModule } from "@angular/core";
 
 import {
@@ -28,6 +29,7 @@ import { PostListComponent } from "./posts/post-list/post-list.component";
     BrowserAnimationsModule,
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     // Angular Material
     MatButtonModule,
     MatExpansionModule,
