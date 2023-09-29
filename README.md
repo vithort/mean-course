@@ -31,3 +31,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ```js
 node server.js
 ```
+
+## Install
+
+```js
+npm i --save express
+```
