@@ -29,6 +29,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # Study
 
 - [Understanding RxJS](https://academind.com/tutorials/understanding-rxjs)
+- [Learn Node + Express from Scratch (for free!)](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs)
+- [Creating a REST API with Node + Express (+ MongoDB)](https://academind.com/learn/node-js/building-a-restful-api-with/)
+
+# References
+- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 
 # Backend
 
@@ -48,6 +53,10 @@ npm i --save-dev nodemon
 
 ```js
 npm i --save body-parser
+```
+
+```js
+npm i --save mongoose
 ```
 
 ## Run
