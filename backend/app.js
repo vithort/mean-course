@@ -1,9 +1,25 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const mongoose = require("mongoose");
 
 const Post = require("./models/post");
 
 const app = express();
+
+const mongo = {
+  user: "USER",
+  password: "PASSWORD",
+  cluster: "CLUSTER",
+};
+
+mongoose
+  .connect(`mongodb+srv://${mongo.user}:${mongo.password}@${mongo.cluster}`)
+  .then(() => {
+    console.log("Connected to database!");
+  })
+  .catch(() => {
+    console.log("Connection failed!");
+  });
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
