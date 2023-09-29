@@ -37,3 +37,13 @@ node server.js
 ```js
 npm i --save express
 ```
+
+```js
+npm i --save-dev nodemon
+```
+
+## Run
+
+```js
+npm run start:server
+```
