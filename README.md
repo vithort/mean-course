@@ -34,6 +34,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # References
 - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+- [Mongoose Docs](http://mongoosejs.com/docs/guide.html)
+- [MongoDB Docs](https://www.mongodb.com/)
+- [MongoDB Atlas Docs](https://www.mongodb.com/cloud/atlas)
 
 # Backend
 
