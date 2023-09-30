@@ -16,7 +16,7 @@ const storage = multer.diskStorage({
     const isValid = MIME_TYPE_MAP[file.mimetype];
     let error = new Error("Invalid mime type");
     if (isValid) {
-      erro = null;
+      error = null;
     }
     cb(error, "backend/images");
   },
@@ -27,17 +27,21 @@ const storage = multer.diskStorage({
   },
 });
 
-router.post("", multer(storage).single("image"), (req, res, next) => {
-  const post = new Post({
-    title: req.body.title,
-    content: req.body.content,
-  });
-  post.save().then((createdPost) => {
-    res
-      .status(201)
-      .json({ message: "Post added successfully!", postId: createdPost._id });
-  });
-});
+router.post(
+  "",
+  multer({ storage: storage }).single("image"),
+  (req, res, next) => {
+    const post = new Post({
+      title: req.body.title,
+      content: req.body.content,
+    });
+    post.save().then((createdPost) => {
+      res
+        .status(201)
+        .json({ message: "Post added successfully!", postId: createdPost._id });
+    });
+  }
+);
 
 router.put("/:id", (req, res, next) => {
   const post = new Post({
