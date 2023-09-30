@@ -13,6 +13,7 @@ import {
 } from "@angular/material";
 
 import { AppComponent } from "./app.component";
+import { AppRoutingModule } from "./app-routing.module";
 
 import { HeaderComponent } from "./header/header.component";
 import { PostCreateComponent } from "./posts/post-create/post-create.component";
@@ -26,6 +27,7 @@ import { PostListComponent } from "./posts/post-list/post-list.component";
     PostListComponent,
   ],
   imports: [
+    AppRoutingModule,
     BrowserAnimationsModule,
     BrowserModule,
     FormsModule,
