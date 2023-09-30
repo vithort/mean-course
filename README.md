@@ -62,6 +62,10 @@ npm i --save body-parser
 npm i --save mongoose
 ```
 
+```js
+npm i --save multer
+```
+
 ## Run
 
 ```js
