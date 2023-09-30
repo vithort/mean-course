@@ -1,3 +1,6 @@
+/**
+ * MongoDB Credentials
+ */
 const TOKEN = {
   user: "USER",
   password: "PASSWORD",

@@ -6,6 +6,9 @@ const Post = require("./models/post");
 
 const app = express();
 
+/**
+ * MongoDB Credentials
+ */
 const TOKEN = require("../TOKEN");
 
 mongoose
