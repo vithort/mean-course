@@ -6,9 +6,10 @@ import { NgModule } from "@angular/core";
 
 import {
   MatButtonModule,
-  MatExpansionModule,
   MatCardModule,
+  MatExpansionModule,
   MatInputModule,
+  MatProgressSpinnerModule,
   MatToolbarModule,
 } from "@angular/material";
 
@@ -34,9 +35,10 @@ import { PostListComponent } from "./posts/post-list/post-list.component";
     HttpClientModule,
     // Angular Material
     MatButtonModule,
-    MatExpansionModule,
     MatCardModule,
+    MatExpansionModule,
     MatInputModule,
+    MatProgressSpinnerModule,
     MatToolbarModule,
   ],
   providers: [],
