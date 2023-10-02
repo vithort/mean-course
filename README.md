@@ -40,6 +40,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - [MongoDB Atlas Docs](https://www.mongodb.com/cloud/atlas)
 - [Multer Docs](https://github.com/expressjs/multer)
 - [Tutorial on Angular Image Upload](https://academind.com/learn/angular/snippets/angular-image-upload-made-easy)
+- [Discussion on Pagination & Mongoose](https://stackoverflow.com/questions/5539955/how-to-paginate-with-mongoose-in-node-js)
 
 # Backend
 
