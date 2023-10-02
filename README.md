@@ -33,10 +33,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - [Creating a REST API with Node + Express (+ MongoDB)](https://academind.com/learn/node-js/building-a-restful-api-with/)
 
 # References
+
 - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 - [Mongoose Docs](http://mongoosejs.com/docs/guide.html)
 - [MongoDB Docs](https://www.mongodb.com/)
 - [MongoDB Atlas Docs](https://www.mongodb.com/cloud/atlas)
+- [Multer Docs](https://github.com/expressjs/multer)
+- [Tutorial on Angular Image Upload](https://academind.com/learn/angular/snippets/angular-image-upload-made-easy)
 
 # Backend
 
