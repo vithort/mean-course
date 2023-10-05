@@ -7,9 +7,10 @@ import { AuthData } from "./auth-data.model";
 
 @Injectable({ providedIn: "root" })
 export class AuthService {
-  private isAuthenticated = false;
   private authStatusListener = new Subject<boolean>();
+  private isAuthenticated = false;
   private token: string;
+  private tokenTimer: NodeJS.Timer;
   private url = "http://localhost:3000/api/user";
 
   constructor(private http: HttpClient, private router: Router) {}
@@ -36,11 +37,15 @@ export class AuthService {
   login(email: string, password: string) {
     const authData: AuthData = { email: email, password: password };
     this.http
-      .post<{ token: string }>(`${this.url}/login`, authData)
+      .post<{ token: string; expiresIn: number }>(`${this.url}/login`, authData)
       .subscribe((response) => {
         const token = response.token;
         this.token = token;
         if (token) {
+          const expiresInDuration = response.expiresIn;
+          this.tokenTimer = setTimeout(() => {
+            this.logout();
+          }, expiresInDuration * 1000);
           this.isAuthenticated = true;
           this.authStatusListener.next(true);
           this.router.navigate(["/"]);
@@ -52,6 +57,7 @@ export class AuthService {
     this.token = null;
     this.isAuthenticated = false;
     this.authStatusListener.next(false);
+    clearTimeout(this.tokenTimer);
     this.router.navigate(["/"]);
   }
 }
