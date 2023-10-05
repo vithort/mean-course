@@ -70,6 +70,10 @@ npm i --save mongoose
 npm i --save multer
 ```
 
+```js
+npm i --save mongoose-unique-validator
+```
+
 ## Run
 
 ```js
