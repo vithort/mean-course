@@ -21,6 +21,7 @@ import { HeaderComponent } from "./header/header.component";
 import { LoginComponent } from "./auth/login/login/login.component";
 import { PostCreateComponent } from "./posts/post-create/post-create.component";
 import { PostListComponent } from "./posts/post-list/post-list.component";
+import { SignupComponent } from "./auth/signup/signup.component";
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { PostListComponent } from "./posts/post-list/post-list.component";
     LoginComponent,
     PostCreateComponent,
     PostListComponent,
+    SignupComponent,
   ],
   imports: [
     AppRoutingModule,
