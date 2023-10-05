@@ -31,6 +31,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - [Understanding RxJS](https://academind.com/tutorials/understanding-rxjs)
 - [Learn Node + Express from Scratch (for free!)](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs)
 - [Creating a REST API with Node + Express (+ MongoDB)](https://academind.com/learn/node-js/building-a-restful-api-with/)
+- [Tutorial on Angular Image Upload](https://academind.com/learn/angular/snippets/angular-image-upload-made-easy)
+- [Discussion on Pagination & Mongoose](https://stackoverflow.com/questions/5539955/how-to-paginate-with-mongoose-in-node-js)
 
 # References
 
@@ -39,8 +41,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - [MongoDB Docs](https://www.mongodb.com/)
 - [MongoDB Atlas Docs](https://www.mongodb.com/cloud/atlas)
 - [Multer Docs](https://github.com/expressjs/multer)
-- [Tutorial on Angular Image Upload](https://academind.com/learn/angular/snippets/angular-image-upload-made-easy)
-- [Discussion on Pagination & Mongoose](https://stackoverflow.com/questions/5539955/how-to-paginate-with-mongoose-in-node-js)
 
 # Backend
 

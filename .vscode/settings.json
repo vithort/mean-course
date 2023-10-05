@@ -1,0 +1,44 @@
+{
+  "eslint.format.enable": true,
+  "eslint.workingDirectories": ["./"],
+  "eslint.validate": ["typescript", "html"],
+  "eslint.options": {
+    "extensions": [".ts", ".html"]
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": null,
+    "activityBar.activeBorder": null,
+    "activityBar.background": null,
+    "activityBar.foreground": null,
+    "activityBar.inactiveForeground": null,
+    "activityBarBadge.background": null,
+    "activityBarBadge.foreground": null,
+    "statusBar.background": null,
+    "statusBar.foreground": null,
+    "statusBarItem.hoverBackground": null,
+    "titleBar.activeBackground": null,
+    "titleBar.activeForeground": null,
+    "titleBar.inactiveBackground": null,
+    "titleBar.inactiveForeground": null,
+    "sash.hoverBorder": null,
+    "statusBarItem.remoteBackground": null,
+    "statusBarItem.remoteForeground": null,
+    "commandCenter.border": null
+  },
+  "peacock.color": null
+}
