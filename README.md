@@ -78,6 +78,10 @@ npm i --save mongoose-unique-validator
 npm i --save bcrypt
 ```
 
+```js
+npm i --save jsonwebtoken
+```
+
 ## Run
 
 ```js
