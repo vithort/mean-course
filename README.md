@@ -33,6 +33,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - [Creating a REST API with Node + Express (+ MongoDB)](https://academind.com/learn/node-js/building-a-restful-api-with/)
 - [Tutorial on Angular Image Upload](https://academind.com/learn/angular/snippets/angular-image-upload-made-easy)
 - [Discussion on Pagination & Mongoose](https://stackoverflow.com/questions/5539955/how-to-paginate-with-mongoose-in-node-js)
+  [Angular Route Guards](https://angular.io/guide/router#milestone-5-route-guards)
+  [More on Angular Interceptors](https://angular.io/guide/http#intercepting-requests-and-responses)
 
 # References
 
@@ -41,6 +43,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - [MongoDB Docs](https://www.mongodb.com/)
 - [MongoDB Atlas Docs](https://www.mongodb.com/cloud/atlas)
 - [Multer Docs](https://github.com/expressjs/multer)
+- [More on JWT](https://jwt.io/introduction/)
 
 # Backend
 
