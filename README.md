@@ -81,7 +81,7 @@ npm i --save mongoose-unique-validator
 ```
 
 ```js
-npm i --save bcrypt
+npm i --save bcryptjs
 ```
 
 ```js
