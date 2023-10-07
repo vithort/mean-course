@@ -49,6 +49,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - [Mongoose Relations (and how you could combine them when fetching data)](http://mongoosejs.com/docs/populate.html)
 - [AWS Elastic Beanstalk Documentation](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html)
 
+# Addition
+
+- [Add Web Sockets for Realtime Refresher](https://www.udemy.com/course/angular-2-and-nodejs-the-practical-guide/learn/lecture/10523172#questions/11161631/)
+
 # Backend
 
 ```js
