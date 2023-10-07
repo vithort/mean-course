@@ -4,17 +4,6 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HTTP_INTERCEPTORS, HttpClientModule } from "@angular/common/http";
 import { NgModule } from "@angular/core";
 
-import {
-  MatButtonModule,
-  MatCardModule,
-  MatDialogModule,
-  MatExpansionModule,
-  MatInputModule,
-  MatPaginatorModule,
-  MatProgressSpinnerModule,
-  MatToolbarModule,
-} from "@angular/material";
-
 import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app-routing.module";
 
@@ -27,6 +16,8 @@ import { PostCreateComponent } from "./posts/post-create/post-create.component";
 import { PostListComponent } from "./posts/post-list/post-list.component";
 import { SignupComponent } from "./auth/signup/signup.component";
 
+import { AngularMaterialModule } from "./angular-material.module";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,21 +29,13 @@ import { SignupComponent } from "./auth/signup/signup.component";
     SignupComponent,
   ],
   imports: [
+    AngularMaterialModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     BrowserModule,
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    // Angular Material
-    MatButtonModule,
-    MatCardModule,
-    MatDialogModule,
-    MatExpansionModule,
-    MatInputModule,
-    MatPaginatorModule,
-    MatProgressSpinnerModule,
-    MatToolbarModule,
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
