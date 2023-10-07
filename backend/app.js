@@ -21,7 +21,6 @@ mongoose
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use("/images", express.static(path.join("images")));
 
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -38,5 +37,16 @@ app.use((req, res, next) => {
 
 app.use("/api/posts", postsRoutes);
 app.use("/api/user", userRoutes);
+
+/*
+// This code is for use in only one server: backend + frontend
+// You can also remove CORS: ln 25 to 36
+
+app.use("/", express.static(path.join(__dirname, "angular")));
+
+app.use((req, res, next) => {
+  res.sendFile(path.join(__dirname, "angular", "index.html"));
+});
+*/
 
 module.exports = app;

@@ -47,6 +47,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - [More on Angular Interceptors](https://angular.io/guide/http#intercepting-requests-and-responses)
 - [More on JWT](https://jwt.io/introduction/)
 - [Mongoose Relations (and how you could combine them when fetching data)](http://mongoosejs.com/docs/populate.html)
+- [AWS Elastic Beanstalk Documentation](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html)
 
 # Backend
 
