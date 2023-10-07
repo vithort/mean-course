@@ -8,13 +8,10 @@ const userRoutes = require("./routes/user");
 
 const app = express();
 
-/**
- * MongoDB Credentials
- */
-const TOKEN = require("../TOKEN");
-
 mongoose
-  .connect(`mongodb+srv://${TOKEN.user}:${TOKEN.password}@${TOKEN.cluster}`)
+  .connect(
+    `mongodb+srv://${process.env.MONGO_ATLAS_USER}:${process.env.MONGO_ATLAS_PW}@${process.env.MONGO_ATLAS_CLUSTER}`
+  )
   .then(() => {
     console.log("Connected to database!");
   })

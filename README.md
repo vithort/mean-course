@@ -34,6 +34,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - [Tutorial on Angular Image Upload](https://academind.com/learn/angular/snippets/angular-image-upload-made-easy)
 - [Discussion on Pagination & Mongoose](https://stackoverflow.com/questions/5539955/how-to-paginate-with-mongoose-in-node-js)
 - [Angular Route Guards](https://angular.io/guide/router#milestone-5-route-guards)
+- [Understanding Environment Variables](https://www.twilio.com/blog/2017/08/working-with-environment-variables-in-node-js.html)
 
 # References
 

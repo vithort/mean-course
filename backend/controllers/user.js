@@ -3,11 +3,6 @@ const jwt = require("jsonwebtoken");
 
 const User = require("../models/user");
 
-/**
- * MongoDB Credentials
- */
-const TOKEN = require("../../TOKEN");
-
 exports.userCreate = (req, res, next) => {
   bcrypt.hash(req.body.password, 10).then((hash) => {
     const user = new User({
@@ -50,7 +45,7 @@ exports.userLogin = (req, res, next) => {
       }
       const token = jwt.sign(
         { email: fetchedUser.email, userId: fetchedUser._id },
-        TOKEN.jwt,
+        process.env.JWT_KEY,
         { expiresIn: "1h" }
       );
       res
